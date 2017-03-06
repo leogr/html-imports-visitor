@@ -1,0 +1,22 @@
+{
+  "root": true,
+  "rules": {
+    "semi": "off",
+    "no-console": "off",
+    "max-params": "off",
+    "max-statements": "off"
+  },
+  "env": {
+    "es6": true,
+    "node": true
+  },
+  "extends": [
+    "walmart/configurations/es6-browser",
+    "plugin:import/errors",
+    "plugin:import/warnings"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module"
+  }
+}
