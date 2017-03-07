@@ -6,15 +6,16 @@
   "module": "dist/lib.es.js",
   "jsnext:main": "dist/lib.es.js",
   "scripts": {
+    "build": "rm -rf dist && rollup -c",
     "pretest": "npm run lint && npm run build",
     "test": "mocha",
     "lint": "eslint src/**/*.js",
     "changelog": "conventional-changelog -p eslint -i CHANGELOG.md -s",
     "changelog:edit": "$(git var GIT_EDITOR) CHANGELOG.md",
-    "preversion": "npm run test",
+    "preversion": "npm test",
     "version": "npm run changelog && npm run changelog:edit && git add CHANGELOG.md",
     "postversion": "git push && git push --tags",
-    "build": "rollup -c"
+    "prepublish": "npm test"
   },
   "repository": "leogr/html-imports-visitor",
   "git": {
@@ -35,7 +36,6 @@
   "homepage": "https://github.com/leogr/html-imports-visitor",
   "devDependencies": {
     "babel-eslint": "^7.1.1",
-    "babel-register": "^6.23.0",
     "conventional-changelog-cli": "^1.2.0",
     "eslint": "^3.12.2",
     "eslint-config-walmart": "^1.1.1",
