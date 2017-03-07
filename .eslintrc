@@ -2,7 +2,6 @@
   "root": true,
   "rules": {
     "semi": "off",
-    "no-console": "off",
     "max-params": "off",
     "max-statements": "off"
   },
@@ -11,7 +10,7 @@
     "node": true
   },
   "extends": [
-    "walmart/configurations/es6-browser",
+    "walmart/configurations/es6-node",
     "plugin:import/errors",
     "plugin:import/warnings"
   ],
