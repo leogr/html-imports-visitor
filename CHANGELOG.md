@@ -1,3 +1,22 @@
+<a name="0.0.2"></a>
+## [0.0.2](https://github.com/leogr/html-imports-visitor/compare/v0.0.1...v0.0.2) (2017-03-17)
+
+
+### Build
+
+* Reduce dev dependencies ([a23f23def89fdbd1a3e7afd91a2f83e28192906c](https://github.com/leogr/html-imports-visitor/commit/a23f23def89fdbd1a3e7afd91a2f83e28192906c))
+
+### Docs
+
+* Add real world usage example ([82ef9c0d8405529904787736f558a62738d833f1](https://github.com/leogr/html-imports-visitor/commit/82ef9c0d8405529904787736f558a62738d833f1))
+* Improve description ([3c3ddabaabd5afd25a8c7508601b29f5bdc53ce6](https://github.com/leogr/html-imports-visitor/commit/3c3ddabaabd5afd25a8c7508601b29f5bdc53ce6))
+
+### Update
+
+* Change linter config to ES6 Node ([06d14ad055623d8f724cb8cf855ba9ae2e5d8868](https://github.com/leogr/html-imports-visitor/commit/06d14ad055623d8f724cb8cf855ba9ae2e5d8868))
+
+
+
 <a name="0.0.1"></a>
 ## 0.0.1 (2017-03-06)
 
