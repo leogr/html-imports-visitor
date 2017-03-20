@@ -173,4 +173,22 @@ describe("html-imports-visitor", () => {
     ])
   })
 
+  it("does not traverse remote URL", () => {
+    const entry = resolve("test/fixtures/remote-import.html")
+    const remote = "http://example.net/index.html"
+    assertAnalysisResult(performAnalysis(entry, [predicates.hasTagName("script")]), [
+      ["enter", entry], // remote-import.html
+      ["import", entry, remote] // remote-import.html imports http://example.net/index.html
+    ])
+  })
+
+  it("does not traverse non-existing file", () => {
+    const entry = resolve("test/fixtures/non-existing-import.html")
+    const nonExisting = resolve("test/fixtures/this-file-does-not-exist.html")
+    assertAnalysisResult(performAnalysis(entry, [predicates.hasTagName("script")]), [
+      ["enter", entry], // non-existing-import.html
+      ["import", entry, nonExisting] // non-existing-import.html imports this-file-does-not-exist.html
+    ])
+  })
+
 })

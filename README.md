@@ -62,6 +62,8 @@ helper.enter("index.html")
 
 > `html-visitor-imports` uses [parse5](https://github.com/inikulin/parse5), documentation about parsed elements can be found [here](http://inikulin.github.io/parse5/modules/ast.html)
 
+> Also note that remote or non-existing files will be not entered.
+
 ### Bundle scripts with [rollup.js](http://rollupjs.org/)
 
 Take a look at [rollup-plugin-html-entry](https://github.com/leogr/rollup-plugin-html-entry) for a real world usage example.

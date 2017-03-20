@@ -1,6 +1,6 @@
 import { parse } from "parse5"
 import { predicates as dom5predicates, getAttribute, queryAll } from "dom5"
-import { resolve, load, isLocal as isLocalPath } from "./path.js"
+import { resolve, load, isLocal as isLocalPath, fileExists } from "./path.js"
 import { resolve as resolvePath } from "path"
 
 export const predicates = dom5predicates
@@ -48,11 +48,12 @@ const traverse = (visitor, path, predicate, importMap = {}, link = null) => {
       getAttribute(element, "href")
 
     if (linkHref) {
-      const location = resolve(path, linkHref)
       const isLocal = isLocalPath(linkHref)
-      visitor.import(element, { path, location, isLocal })
-      // Exclude remote locations
-      if (isLocal) {
+      const location = isLocal ? resolve(path, linkHref) : linkHref
+      const isExists = isLocal && fileExists(location)
+      visitor.import(element, { path, location, isLocal, isExists })
+      // Exclude remote locations and non-existing files
+      if (isExists) {
         // Recursively traverse any found import locations
         traverse(visitor, location, predicate, importMap, element)
       }
