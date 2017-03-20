@@ -1,3 +1,13 @@
+<a name="0.1.0"></a>
+# [0.1.0](https://github.com/leogr/html-imports-visitor/compare/v0.0.2...v0.1.0) (2017-03-20)
+
+
+### Breaking
+
+* Ignore non-existing files ([8cc239933f491a6b7f32386436cd1d14b986033d](https://github.com/leogr/html-imports-visitor/commit/8cc239933f491a6b7f32386436cd1d14b986033d))
+
+
+
 <a name="0.0.2"></a>
 ## [0.0.2](https://github.com/leogr/html-imports-visitor/compare/v0.0.1...v0.0.2) (2017-03-17)
 
