@@ -79,12 +79,11 @@ const assertAnalysisResult = (traversalList, expectedList) => {
 const performAnalysis = (entry, predicate) => {
 
   const traversalList = []
-  const pushArgs = (...args) => traversalList.push([...args])
 
   const visitor = {
-    import: (...args) => pushArgs("import", ...args),
-    enter: (...args) => pushArgs("enter", ...args),
-    visit: (...args) => pushArgs("visit", ...args)
+    import: (element, data) => traversalList.push(["import", element, data]),
+    enter: (element, data) => traversalList.push(["enter", element, data]),
+    visit: (element, data) => traversalList.push(["visit", element, data])
   }
 
   const helper = new VisitorHelper(visitor, predicate)
