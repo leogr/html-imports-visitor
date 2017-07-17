@@ -1,3 +1,21 @@
+<a name="0.1.1"></a>
+## [0.1.1](https://github.com/leogr/html-imports-visitor/compare/v0.1.0...v0.1.1) (2017-07-17)
+
+
+### Build
+
+* Improve publishing system ([8bace713a9704d70a4afec7d31b0c1db8030aa8b](https://github.com/leogr/html-imports-visitor/commit/8bace713a9704d70a4afec7d31b0c1db8030aa8b))
+
+### Docs
+
+* Build status badge ([4100ec19198cc320e1189bc8aa7b918f90748ef7](https://github.com/leogr/html-imports-visitor/commit/4100ec19198cc320e1189bc8aa7b918f90748ef7))
+
+### New
+
+* CI setup  ([305490aa4e8a8dfe9c346dbfae2b58c163afd0d2](https://github.com/leogr/html-imports-visitor/commit/305490aa4e8a8dfe9c346dbfae2b58c163afd0d2)), closes [#1](https://github.com/leogr/html-imports-visitor/issues/1)
+
+
+
 <a name="0.1.0"></a>
 # [0.1.0](https://github.com/leogr/html-imports-visitor/compare/v0.0.2...v0.1.0) (2017-03-20)
 

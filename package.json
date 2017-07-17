@@ -1,6 +1,6 @@
 {
   "name": "html-imports-visitor",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A helper library to traverse the spanning tree of the HTML imports graph",
   "main": "dist/lib.js",
   "module": "dist/lib.es.js",
