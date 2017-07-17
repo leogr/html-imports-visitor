@@ -1,3 +1,5 @@
+[![Build Status](https://img.shields.io/travis/leogr/html-imports-visitor.svg?style=flat-square)](https://travis-ci.org/leogr/html-imports-visitor)
+
 # HTML Imports visitor
 
 A helper library to traverse the spanning tree of the HTML imports graph.
