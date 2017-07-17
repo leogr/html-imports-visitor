@@ -8,7 +8,7 @@ export default {
     buble({
       include: ["index.js", "src/**"],
       target: {
-        node: "0.12"
+        node: "4"
       }
     }),
     nodeResolve({

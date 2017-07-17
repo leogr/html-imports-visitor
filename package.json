@@ -8,7 +8,7 @@
   "scripts": {
     "build": "rm -rf dist && rollup -c",
     "pretest": "npm run lint && npm run build",
-    "test": "mocha",
+    "test": "mocha --compilers js:buble/register",
     "lint": "eslint src/**/*.js",
     "changelog": "conventional-changelog -p eslint -i CHANGELOG.md -s",
     "changelog:edit": "$(git var GIT_EDITOR) CHANGELOG.md",
@@ -34,9 +34,13 @@
   "bugs": {
     "url": "https://github.com/leogr/html-imports-visitor/issues"
   },
+  "engines": {
+    "node": ">=4"
+  },
   "homepage": "https://github.com/leogr/html-imports-visitor",
   "devDependencies": {
     "babel-eslint": "^7.1.1",
+    "buble": "^0.15.2",
     "conventional-changelog-cli": "^1.2.0",
     "eslint": "^3.12.2",
     "eslint-config-walmart": "^1.1.1",
