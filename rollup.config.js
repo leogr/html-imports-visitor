@@ -3,7 +3,7 @@ import nodeResolve from "rollup-plugin-node-resolve"
 import commonjs from "rollup-plugin-commonjs"
 
 export default {
-  entry: "index.js",
+  input: "index.js",
   plugins: [
     buble({
       include: ["index.js", "src/**"],
@@ -23,10 +23,10 @@ export default {
     "dom5",
     "parse5"
   ],
-  sourceMap: true,
-  moduleName: "html-imports-visitor",
-  targets: [
-    { dest: "dist/lib.js", format: "cjs" },
-    { dest: "dist/lib.es.js", format: "es" }
+  sourcemap: true,
+  name: "html-imports-visitor",
+  output: [
+    { file: "dist/lib.js", format: "cjs" },
+    { file: "dist/lib.es.js", format: "es" }
   ]
 }
