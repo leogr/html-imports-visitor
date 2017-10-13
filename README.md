@@ -62,6 +62,12 @@ const helper = new VisitorHelper(visitor, predicates.hasTagName("script"))
 helper.enter("index.html")
 ```
 
+## Demo
+You can find the minimum configuration needed to run the library in *demo/demo.js* and you can try it running:
+```
+node demo/demo.js
+```
+
 > `html-visitor-imports` uses [parse5](https://github.com/inikulin/parse5), documentation about parsed elements can be found [here](http://inikulin.github.io/parse5/modules/ast.html)
 
 > Also note that remote or non-existing files will be not entered.
