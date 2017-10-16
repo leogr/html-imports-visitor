@@ -1,3 +1,17 @@
+<a name="0.1.2"></a>
+## [0.1.2](https://github.com/leogr/html-imports-visitor/compare/v0.1.1...v0.1.2) (2017-10-16)
+
+
+### New
+
+* Add demo ([3d167fb415eefa81272b2965c7d0df0f39b22dbb](https://github.com/leogr/html-imports-visitor/commit/3d167fb415eefa81272b2965c7d0df0f39b22dbb))
+
+### Upgrade
+
+* Various deps ([1b68270ec05c2d2b2858607210174e45ff17cdb5](https://github.com/leogr/html-imports-visitor/commit/1b68270ec05c2d2b2858607210174e45ff17cdb5))
+
+
+
 <a name="0.1.1"></a>
 ## [0.1.1](https://github.com/leogr/html-imports-visitor/compare/v0.1.0...v0.1.1) (2017-07-17)
 
